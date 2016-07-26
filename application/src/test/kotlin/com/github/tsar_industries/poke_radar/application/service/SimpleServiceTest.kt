@@ -8,4 +8,9 @@ class SimpleServiceTest {
     fun shouldReturnMessage() {
         assertThat(SimpleService().getMessage()).isEqualTo("The service class works")
     }
+
+    @Test
+    fun shouldReturnUsername() {
+        assertThat(SimpleService().getUsername()).isEqualTo("")
+    }
 }
