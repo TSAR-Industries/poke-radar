@@ -3,6 +3,8 @@ Hipchat integration to announce Pokémon spawns at your house/workplace
 
 ## Running:
     ./build-and-run.sh
+you can test the integration with the pokemongo severs by running:
+    http://localhost:8080/user/get?username=x&password=x
 
 ## Finding outdated dependencies
     ./gradlew dependencyUpdates

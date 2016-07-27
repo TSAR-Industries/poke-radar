@@ -10,21 +10,31 @@ repositories {
     maven { url "https://jitpack.io" }
 }
 
+// todo: figure out how to move this to the base gradle file so it applies to all projects
+configurations {
+    all*.exclude group: 'org.glassfish.hk2.external', module: 'javax.inject'
+}
+
 dependencies {
+    compile project(':pokemon-go-adapter')
+
     compile 'org.jetbrains.kotlin:kotlin-runtime:1.0.3'
 
     compile 'io.dropwizard:dropwizard-core:1.0.0'
+
     compile 'io.dropwizard.metrics:metrics-healthchecks:3.1.2'
 
     compile 'javax.ws.rs:javax.ws.rs-api:2.0.1'
 
+    compile 'javax.inject:javax.inject:1'
+    compile 'com.google.inject:guice:4.1.0'
     compile 'ru.vyarus:dropwizard-guicey:3.2.0'
 
-    compile 'com.google.inject:guice:4.1.0'
     compile 'com.github.RichoDemus.guice-classpath-scanning:guice-classpath-scanner:prerelease'
 
     testCompile 'junit:junit:4.12'
     testCompile 'org.assertj:assertj-core:3.5.2'
+    testCompile 'org.mockito:mockito-core:1.10.19'
 }
 
 buildscript {
@@ -40,8 +50,8 @@ buildscript {
 }
 
 task copyDependencies(type: Copy) {
-   from configurations.compile
-   into 'build/dependencies'
+    from configurations.compile
+    into 'build/dependencies'
 }
 
 task buildImage(type: DockerBuildImage) {

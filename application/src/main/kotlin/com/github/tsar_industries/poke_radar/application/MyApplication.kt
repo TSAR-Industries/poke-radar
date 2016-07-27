@@ -1,7 +1,6 @@
 package com.github.tsar_industries.poke_radar.application
 
 import com.github.richodemus.guice_classpath_scanning.ClassPathScanningModule
-import com.github.tsar_industries.poke_radar.application.MyConfiguration
 import io.dropwizard.Application
 import io.dropwizard.setup.Bootstrap
 import io.dropwizard.setup.Environment
