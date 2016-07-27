@@ -13,7 +13,7 @@ repositories {
 dependencies {
     compile 'org.jetbrains.kotlin:kotlin-runtime:1.0.3'
 
-    compile 'io.dropwizard:dropwizard-core:0.9.3'
+    compile 'io.dropwizard:dropwizard-core:1.0.0'
     compile 'io.dropwizard.metrics:metrics-healthchecks:3.1.2'
 
     compile 'javax.ws.rs:javax.ws.rs-api:2.0.1'
@@ -24,7 +24,7 @@ dependencies {
     compile 'com.github.RichoDemus.guice-classpath-scanning:guice-classpath-scanner:prerelease'
 
     compile 'com.github.Grover-c13:PokeGOAPI-Java:0.2'
-    compile 'com.squareup.okhttp3:okhttp:3.4.0-RC1'
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
 
     testCompile 'junit:junit:4.12'
     testCompile 'org.assertj:assertj-core:3.5.2'
