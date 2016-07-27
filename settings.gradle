@@ -1,5 +1,5 @@
 include 'application'
-include 'pokemon-go-wrapper'
+include 'pokemon-go-adapter'
 
 rootProject.name = 'poke-radar'
 
