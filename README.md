@@ -1,6 +1,6 @@
 # poke-radar
 Hipchat integration to announce Pokémon spawns at your house/workplace  
-Build status: [![Build Status](https://travis-ci.org/TSAR-Industries/poke-radar.svg?branch=master)](https://travis-ci.org/TSAR-Industries/ButBut)
+Build status: [![Build Status](https://travis-ci.org/TSAR-Industries/poke-radar.svg?branch=master)](https://travis-ci.org/TSAR-Industries/poke-radar)
 
 ## Running:
     ./build-and-run.sh
